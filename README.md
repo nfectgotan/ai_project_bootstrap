@@ -4,8 +4,8 @@ A reusable starting repository for new software projects that will be built with
 AI assistance from day one.
 
 This repo is intentionally light: it gives every project the operating rules,
-agent handoff files, feature-spec workflow, a starter done-gate, and optional MCP
-tooling without choosing a product stack for you.
+agent handoff files, feature-spec workflow, a starter done-gate, and notes for
+globally configured MCP tooling without choosing a product stack for you.
 
 ## What You Get
 
@@ -47,9 +47,11 @@ bash scripts/selfcheck.sh
 
 MCP servers are expected to be configured globally for the coding agent, not
 vendored into each project. See `MCP.md` for the known global
-`codebase-memory-mcp` setup on this Windows development machine. If a project
-depends on a specific global MCP server, document the expected capability in
-`AGENTS.md` and keep project-local fallback steps available.
+`codebase-memory-mcp` setup on this Windows development machine: the binary lives
+under `%LOCALAPPDATA%\Programs\codebase-memory-mcp\`, and Claude Code launches it
+from the top-level `mcpServers` block in `C:\Users\BossG\.claude.json`. If a
+project depends on a specific global MCP server, document the expected capability
+in `AGENTS.md` and keep project-local fallback steps available.
 
 ## Rules Of The Template
 

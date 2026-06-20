@@ -20,4 +20,5 @@ track meaningful shipped increments.
 - Documented MCP servers as global agent configuration rather than project-local
   install artifacts.
 - Added `MCP.md` with the known Windows-local `codebase-memory-mcp` binary path,
-  Claude Code registration path, version, and deployment boundary.
+  standard installer location, approximate binary size, Claude Code registration
+  path, version, user scope, and deployment boundary.

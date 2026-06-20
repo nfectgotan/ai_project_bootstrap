@@ -6,7 +6,8 @@ new repositories.
 
 ## codebase-memory-mcp
 
-On this Windows machine, `codebase-memory-mcp` is installed globally at:
+On this Windows machine, `codebase-memory-mcp` is installed globally in the
+standard installer location at:
 
 ```text
 C:\Users\BossG\AppData\Local\Programs\codebase-memory-mcp\codebase-memory-mcp.exe
@@ -20,13 +21,16 @@ Equivalent environment-based path:
 
 Known version: `0.8.1`.
 
+The binary is a standalone executable, approximately 270 MB.
+
 Claude Code launches it from the user-scoped registration in:
 
 ```text
 C:\Users\BossG\.claude.json
 ```
 
-The relevant registration is the top-level `mcpServers` block.
+The relevant registration is the top-level `mcpServers` block. That registration
+is user-scoped and applies across projects.
 
 ## Project Guidance
 
