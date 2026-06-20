@@ -22,3 +22,8 @@ track meaningful shipped increments.
 - Added `MCP.md` with the known Windows-local `codebase-memory-mcp` binary path,
   standard installer location, approximate binary size, Claude Code registration
   path, version, user scope, and deployment boundary.
+- Expanded startup docs for secondary users: hosted template repo setup,
+  downstream project creation, global MCP verification, first smoke test,
+  done-gate, and first feature spec.
+- Added concrete `codebase-memory-mcp` verification and Claude Code registration
+  commands for Windows users.

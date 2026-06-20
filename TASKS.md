@@ -48,3 +48,17 @@ was added.
 
 **Human action required:** Keep `MCP.md` updated if the global MCP binary moves
 or the Claude registration path changes.
+
+### 2026-06-20 - Secondary-user startup docs
+
+**Changed:** Expanded `README.md` into a full quick-start for creating a hosted
+bootstrap repo, creating downstream projects, filling project facts, confirming
+global MCP setup, seeding tests, running the done-gate, and starting the first
+feature spec. Expanded `MCP.md` with setup, verification, and usage guidance for
+another Windows user.
+
+**Did not touch:** No project-local MCP binary, installer, or Claude registration
+file was added.
+
+**Human action required:** Create the hosted bootstrap repository and push this
+repo there.
