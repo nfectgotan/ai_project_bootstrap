@@ -17,6 +17,7 @@ tooling without choosing a product stack for you.
 | `PROJECT-BRIEF.md` | One-page product/project frame before implementation begins. |
 | `TASKS.md` | Current sprint, backlog, and session handoffs. |
 | `CHANGELOG.md` | Keep-a-Changelog style project history. |
+| `MCP.md` | Notes for globally configured MCP tooling on the development machine. |
 | `specs/template.md` | Feature spec template. Copy to `specs/NNN-short-name/spec.md`. |
 | `scripts/selfcheck.sh` / `scripts/selfcheck.ps1` | Mechanical done-gates: tests when present, secret scans, env-file scan, and slop warnings. |
 
@@ -45,9 +46,10 @@ bash scripts/selfcheck.sh
 ## MCP Notes
 
 MCP servers are expected to be configured globally for the coding agent, not
-vendored into each project. If a project depends on a specific global MCP server,
-document the expected capability in `AGENTS.md` and keep project-local fallback
-steps available.
+vendored into each project. See `MCP.md` for the known global
+`codebase-memory-mcp` setup on this Windows development machine. If a project
+depends on a specific global MCP server, document the expected capability in
+`AGENTS.md` and keep project-local fallback steps available.
 
 ## Rules Of The Template
 

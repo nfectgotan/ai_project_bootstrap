@@ -46,6 +46,7 @@ Recommended minimum:
 - Agentic or outward actions require explicit human approval.
 - MCP servers are globally configured for the agent. Do not add MCP install
   scripts to this repo unless this project owns the server.
+- Known local MCP details, when relevant, are documented in `MCP.md`.
 
 ## Ownership Lanes
 

@@ -37,3 +37,14 @@ documents MCP servers as globally configured agent capabilities.
 
 **Human action required:** For any downstream project that requires a particular
 MCP server, name the expected global capability in that project's `AGENTS.md`.
+
+### 2026-06-20 - Global MCP locations documented
+
+**Changed:** Added `MCP.md` with the Windows-local `codebase-memory-mcp` binary
+path, Claude Code registration file, known version, and deployment boundary.
+
+**Did not touch:** No project-local installer, binary, or agent registration file
+was added.
+
+**Human action required:** Keep `MCP.md` updated if the global MCP binary moves
+or the Claude registration path changes.

@@ -60,3 +60,4 @@ Include:
 - Run the selfcheck gate before reporting done.
 - Treat MCP servers as globally configured agent tools, not project-local
   dependencies, unless this project owns the server.
+- Known local MCP details, when relevant, are documented in `MCP.md`.
