@@ -20,11 +20,20 @@
 ### 2026-06-20 - Bootstrap created
 
 **Changed:** Created the reusable project bootstrap: AI working docs, project
-brief, tasks/changelog, spec template, selfcheck gate, generic gitignore, and
-optional codebase-memory MCP installer.
+brief, tasks/changelog, spec template, selfcheck gate, and generic gitignore.
 
 **Did not touch:** No application framework, dependencies, credentials, or
 product-specific code were added.
 
 **Human action required:** Rename/fill placeholders, choose the first stack, write
 the first smoke test before feature work, then run the selfcheck gate.
+
+### 2026-06-20 - MCP treated as global
+
+**Changed:** Removed project-local MCP installer guidance. The bootstrap now
+documents MCP servers as globally configured agent capabilities.
+
+**Did not touch:** No app stack or product-specific code.
+
+**Human action required:** For any downstream project that requires a particular
+MCP server, name the expected global capability in that project's `AGENTS.md`.

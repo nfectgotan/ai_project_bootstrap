@@ -19,7 +19,6 @@ tooling without choosing a product stack for you.
 | `CHANGELOG.md` | Keep-a-Changelog style project history. |
 | `specs/template.md` | Feature spec template. Copy to `specs/NNN-short-name/spec.md`. |
 | `scripts/selfcheck.sh` / `scripts/selfcheck.ps1` | Mechanical done-gates: tests when present, secret scans, env-file scan, and slop warnings. |
-| `tools/install-codebase-memory-mcp.ps1` | Optional Windows installer for `codebase-memory-mcp`. |
 
 ## Start A New Project
 
@@ -43,21 +42,19 @@ bash scripts/selfcheck.sh
 6. Write the first non-trivial feature spec in `specs/001-short-name/spec.md`
    before building.
 
-## Optional MCP Setup
+## MCP Notes
 
-On Windows, install the codebase-memory MCP tool with:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File tools/install-codebase-memory-mcp.ps1
-```
-
-This is optional. A project should still work without MCP memory, but the tool can
-help agents recover context across sessions.
+MCP servers are expected to be configured globally for the coding agent, not
+vendored into each project. If a project depends on a specific global MCP server,
+document the expected capability in `AGENTS.md` and keep project-local fallback
+steps available.
 
 ## Rules Of The Template
 
 - No secrets, credentials, real customer data, or `.env` files belong here.
 - No project-specific framework is included by default.
+- Do not vendor global agent/MCP setup into project repos unless the project
+  itself owns that server.
 - Keep this repo boring and portable. Add stack choices only in downstream
   project copies.
 - When a downstream project discovers a reusable improvement, fold it back here

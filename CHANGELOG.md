@@ -14,4 +14,8 @@ track meaningful shipped increments.
   `CLAUDE.md`.
 - Project workflow files: `PROJECT-BRIEF.md`, `TASKS.md`, and `specs/template.md`.
 - Mechanical done-gates: `scripts/selfcheck.sh` and `scripts/selfcheck.ps1`.
-- Optional Windows installer for `codebase-memory-mcp`.
+
+### Changed
+
+- Documented MCP servers as global agent configuration rather than project-local
+  install artifacts.

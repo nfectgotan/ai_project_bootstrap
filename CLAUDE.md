@@ -58,3 +58,5 @@ Include:
 - Do not commit secrets or `.env` files.
 - Keep shared contracts in committed specs, not chat.
 - Run the selfcheck gate before reporting done.
+- Treat MCP servers as globally configured agent tools, not project-local
+  dependencies, unless this project owns the server.

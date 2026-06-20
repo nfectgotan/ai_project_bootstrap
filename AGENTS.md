@@ -44,6 +44,8 @@ Recommended minimum:
 - Non-trivial features start with a committed spec in `specs/`.
 - Agents run the selfcheck gate before reporting done.
 - Agentic or outward actions require explicit human approval.
+- MCP servers are globally configured for the agent. Do not add MCP install
+  scripts to this repo unless this project owns the server.
 
 ## Ownership Lanes
 
