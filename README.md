@@ -67,13 +67,13 @@ On the owner's Windows development machine, `codebase-memory-mcp` is already
 installed at:
 
 ```text
-C:\Users\BossG\AppData\Local\Programs\codebase-memory-mcp\codebase-memory-mcp.exe
+C:\Users\(yourUN)\AppData\Local\Programs\codebase-memory-mcp\codebase-memory-mcp.exe
 ```
 
 Claude Code launches it from:
 
 ```text
-C:\Users\BossG\.claude.json
+C:\Users\yourUN\.claude.json
 ```
 
 For another Windows user, install `codebase-memory-mcp` globally from the
