@@ -73,7 +73,7 @@ C:\Users\(yourUN)\AppData\Local\Programs\codebase-memory-mcp\codebase-memory-mcp
 Claude Code launches it from:
 
 ```text
-C:\Users\yourUN\.claude.json
+C:\Users\(yourUN)\.claude.json
 ```
 
 For another Windows user, install `codebase-memory-mcp` globally from the
