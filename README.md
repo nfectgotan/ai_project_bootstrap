@@ -144,6 +144,37 @@ contract future agents build against.
 | `MCP.md` | Notes for globally configured MCP tooling on the development machine. |
 | `specs/template.md` | Feature spec template. Copy to `specs/NNN-short-name/spec.md`. |
 | `scripts/selfcheck.sh` / `scripts/selfcheck.ps1` | Mechanical done-gates: tests when present, secret scans, env-file scan, and slop warnings. |
+| `LOOP.md` | How the optional **goal loop** works, plus its guardrails and the one safety test you should run once. |
+| `goal.md` | The `/goal` slash command body. Install to `.claude/commands/goal.md`. Sets the goal and the verification standard, then starts work. |
+| `stop-goal-gate.sh` / `stop-goal-gate.ps1` | The Stop hook that re-runs `selfcheck` each time the agent tries to finish. Install to `.claude/hooks/`. |
+| `settings.json` | Hook registration snippet. Merge its `hooks` block into your real `.claude/settings.json`. |
+
+## Goal Loop (optional)
+
+This repo ships an optional **goal loop**: you give the agent a goal with `/goal`,
+and it keeps working — re-running `scripts/selfcheck` every time it tries to finish —
+until the gate passes. The done-gate is the same `selfcheck` you already trust;
+nothing new decides "done." Without an active goal, sessions behave exactly as before.
+
+The loop files ship at the repo root for portability, but they are meant to be
+installed under `.claude/`:
+
+| Ships at root | Install to |
+|---|---|
+| `goal.md` | `.claude/commands/goal.md` |
+| `stop-goal-gate.sh` / `stop-goal-gate.ps1` | `.claude/hooks/` |
+| `settings.json` (hooks block) | merge into `.claude/settings.json` |
+
+After installing, gitignore the loop's scratch files:
+
+```text
+.claude/.goal
+.claude/.goal-count
+```
+
+The loop is capped (default 6 forced passes), respects every AI-CHARTER STOP
+condition, and only runs while a goal is active. **See `LOOP.md` for the full setup,
+guardrails, and the one safety test you should run before trusting the gate.**
 
 ## MCP Notes
 
