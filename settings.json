@@ -1,0 +1,12 @@
+{
+  "//": "Merge this 'hooks' block into your existing .claude/settings.json. Windows uses the .ps1 line; on macOS/Linux delete that line and uncomment the .sh line below.",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          { "type": "command", "command": "powershell -ExecutionPolicy Bypass -File .claude/hooks/stop-goal-gate.ps1" }
+        ]
+      }
+    ]
+  }
+}
